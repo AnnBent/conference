@@ -39,5 +39,6 @@ cur.execute('''CREATE TABLE IF NOT EXISTS conference_info(
     number_of_speakers INTEGER);
 ''')
 conn.commit()
-
+cur.close()
+conn.close()
 
